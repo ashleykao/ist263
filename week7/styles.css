@@ -1,9 +1,9 @@
 body {background-image: url("syracuse_s.png");}
-p {
+div {p {
     background-color: #203299; 
     width: 300px; 
     border: 15px #2b72d2; 
     padding: 50px; 
     margin: 20px;
-    }
+    };}
 

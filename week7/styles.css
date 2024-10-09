@@ -1,2 +1,2 @@
 body {background-image: url("syracuse_s.png");}
-p {border-style: solid;}
+p.one {background-color: #203299; border-style: solid; border-color: #3cb371;}

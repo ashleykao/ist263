@@ -4,5 +4,5 @@ nav {background-color: #abd2da;}
 nav a{color: #C96868;}
 nav a:hover {background-color: #E7CCCC;}
 nav {padding: 10px; margin-bottom: 30px;}
-.footer .left {float: left;}
-.footer .right {float: right;}
+p.one {float: right;}
+.footer {float: left;}

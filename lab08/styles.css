@@ -6,3 +6,5 @@ nav a:hover {background-color: #E7CCCC;}
 nav {padding: 10px; margin-bottom: 30px;}
 p.copy {float: left; margin-top: 0px;}
 p.one {float: right; margin-top: 0px}
+.row1 {display: flex;}
+.row2 {display: flex;}

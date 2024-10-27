@@ -1,0 +1,16 @@
+body {background-color: #B5CFB7; color: #16171C;}
+h1, h2 {color: #b3728c;}
+
+nav {background-color: #abd2da;}
+nav a{color: #C96868;}
+nav a:hover {background-color: #E7CCCC;}
+nav {padding: 10px; margin-bottom: 30px;}
+
+p.copy {float: left; margin-top: 0px;}
+p.one {float: right; margin-top: 0px;}
+
+.row {display: flex; flex-direction: row; background-color: #FFFFFF; border-radius: 2em; margin: 10px; padding: 20px;}
+.col {display: flex; flex-direction: column; margin-left: 20px; margin-right: 20px;}
+.col4 {display: flex; flex-grow: 1;}
+
+.title {text-align: center;}

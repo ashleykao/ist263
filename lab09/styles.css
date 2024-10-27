@@ -1,10 +1,9 @@
 body {background-color: #B5CFB7; color: #16171C; margin: 20px;}
 h1, h2, h3 {color: #b3728c;}
 
-nav {background-color: #abd2da;}
+nav {background-color: #abd2da; padding: 10px; margin-bottom: 30px;}
 nav a{color: #C96868;}
 nav a:hover {background-color: #E7CCCC;}
-nav {padding: 10px; margin-bottom: 30px;}
 
 p.copy {float: left; margin-top: 0px;}
 p.one {float: right; margin-top: 0px;}
@@ -15,7 +14,7 @@ p.one {float: right; margin-top: 0px;}
 
 .title {text-align: center;}
 .parent_row {display: flex;}
-aside {background-color: #abd2da; border-radius: 2em;}
 .main {display: flex; flex-direction: row; flex-basis: 75%; justify-content: space-between; margin-right: 10px;}
+aside {background-color: #abd2da; border-radius: 2em; padding: 20px;}
 .other {display: flex; flex-direction: column; flex-basis: 25%; margin-left: 20px;}
 .parent_row {padding: 20px; margin-top: 20px}

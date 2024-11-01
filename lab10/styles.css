@@ -41,6 +41,7 @@ p.one {
     border-radius: 2em;
     margin: 10px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .col {
@@ -87,4 +88,19 @@ aside {
 .parent_row {
     padding: 20px;
     margin-top: 20px
+}
+
+.pic {
+    max-width: 100%
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    span {
+        display: none;
+    }
 }

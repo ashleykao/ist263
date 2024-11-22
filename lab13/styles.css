@@ -1,0 +1,123 @@
+body {
+    background-color: #B5CFB7;
+    color: #16171C;
+    margin: 20px;
+    font-size: 1 em;
+}
+
+h1,
+h2,
+h3 {
+    color: #b3728c;
+}
+
+nav {
+    background-color: #abd2da;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #C96868;
+}
+
+nav a:hover {
+    background-color: #E7CCCC;
+}
+
+p.copy {
+    float: left;
+    margin-top: 0px;
+}
+
+p.one {
+    float: right;
+    margin-top: 0px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: 2em;
+    margin: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.col4 {
+    display: flex;
+    flex-grow: 1;
+}
+
+.title {
+    text-align: center;
+}
+
+.parent_row {
+    display: flex;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 75%;
+    justify-content: space-between;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+aside {
+    background-color: #abd2da;
+    border-radius: 2em;
+    padding: 20px;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    margin-left: 20px;
+}
+
+.parent_row {
+    padding: 20px;
+    margin-top: 20px
+}
+
+.pic {
+    max-width: 100%
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    span {
+        display: none;
+    }
+}
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}

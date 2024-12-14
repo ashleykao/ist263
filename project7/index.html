@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashley Kao Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="icons.css">
 </head>
 
 <body>
@@ -13,16 +14,34 @@
         <nav>
             <div class="logo">Ashley Kao</div>
 
-            <div class="links" id="menu">
-                <a href="index.html">Home</a>
-                &#124;
-                <a href="exp.html">Experience</a>
-                &#124;
-                <a href="proj.html">Project Gallery</a>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"> <a href="close"><svg xmlns="http://www.w3.org/2000/svg" height="2p6x"
+                            viewBox="0 -960 960 960" width="26px" fill="#6e35ab">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a> </li>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="exp.html">Experience</a> </li>
+                <li> <a href="proj.html">Project Gallery</a> </li>
+            </ul>
+
+            <div class="links">
+                <ul>
+                    <li class="hideOnMobile"> <a href="index.html">Home</a> </li>
+                    <li class="hideOnMobile"> <a href="exp.html">Experience</a> </li>
+                    <li class="hideOnMobile"> <a href="proj.html">Project Gallery</a> </li>
+                    <li class="menubutton" onclick="showSidebar()"> <a href="menu"><svg
+                                xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                                fill="#6e35ab">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                            </svg></a></li>
+                </ul>
             </div>
         </nav>
         <a href="#main" class="skip">Skip to main content</a>
     </header>
+
+
 
     <div class="row1">
         <div class="col1">
@@ -73,29 +92,32 @@
 
     <hr>
     <br>
-    <p>
-        Below are images of my friends and some scenery I enjoy. I believe in taking in the precious moments in life,
-        which are reflected in these images.
-    </p>
+    <aside>
+        <p class="aside">
+            Below are images of my friends and some scenery I enjoy. I believe in taking in the precious moments in
+            life,
+            which are reflected in these images.
+        </p>
 
-    <div class="row3">
-        <div class="col">
-            <img src="media/gabby.jpeg" alt="my roommate">
+        <div class="row3">
+            <div class="col">
+                <img src="media/gabby.jpeg" alt="my roommate">
+            </div>
+            <div class="col">
+                <img src="media/ga.JPG" alt="glass animals concert">
+            </div>
+            <div class="col">
+                <img src="media/friends2.jpeg" alt="my friends">
+            </div>
+            <div class="col">
+                <img src="media/san_fran.JPG" alt="san francisco">
+            </div>
+            <div class="col">
+                <img src="media/skan.JPG" alt="sunset at skaneatles lake">
+            </div>
         </div>
-        <div class="col">
-            <img src="media/ga.JPG" alt="glass animals concert">
-        </div>
-        <div class="col">
-            <img src="media/friends2.jpeg" alt="my friends">
-        </div>
-        <div class="col">
-            <img src="media/san_fran.JPG" alt="san francisco">
-        </div>
-        <div class="col">
-            <img src="media/skan.JPG" alt="sunset at skaneatles lake">
-        </div>
-    </div>
-
+    </aside>
+    <br>
 
     <footer>
         <div class="footer">
@@ -126,7 +148,15 @@
         </nav>
     </footer>
 
-</body>
+    <script>
+        function showSidebar() {
+            document.querySelector('.sidebar').style.display = 'flex';
+        }
 
+        function hideSidebar() {
+            document.querySelector('.sidebar').style.display = 'none';
+        }
+    </script>
+</body>
 
 </html>

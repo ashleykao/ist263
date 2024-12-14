@@ -27,31 +27,84 @@ h2 {
 
 nav {
     background-color: #d6b6cd;
-    padding: 10px 20px;
-    margin-bottom: 30px;
-    color: #6e35ab;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: #6e35ab;
+}
+
+nav a:hover {
+    background-color: #f2c9e7;
 }
 
 .logo {
     float: left;
-    text-align: center;
-    color: #873647;
+    text-align: left;
+    color: #3d205c;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: auto;
+    flex-wrap: nowrap;
 }
 
-.links {
-    color: #6e35ab;
-    float: right;
-    text-align: center;
-    padding: 14px 16px;
-    gap: 20px;
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #8a3e747b;
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.links a:hover {
-    background-color: #f2c9e7;
-    border-radius: 5px
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%
+}
+
+.menubutton {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menubutton {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
 }
 
 img {
@@ -60,7 +113,6 @@ img {
     display: block;
     border-radius: 10px;
 }
-
 
 .row1 {
     display: flex;
@@ -86,6 +138,7 @@ img {
     margin-right: 20px;
     max-width: 50%;
     justify-content: center;
+    margin-left: 40px;
 }
 
 .col2 {
@@ -98,6 +151,10 @@ img {
     width: 350px;
     height: auto;
     margin: 0 auto;
+}
+
+.aside {
+    margin-left: 40px;
 }
 
 @media (max-width: 800px) {
@@ -143,6 +200,7 @@ img {
 .title,
 .snap {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     max-width: 900px;
     width: 100%;
@@ -212,6 +270,7 @@ img {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px
 }

@@ -3,6 +3,7 @@ body {
     color: #48233c;
     margin: 20px;
     font-family: Helvetica;
+    font-size: 1.05em;
 }
 
 h1,
@@ -26,12 +27,15 @@ h2 {
 }
 
 nav {
+    overflow: hidden;
     background-color: #d6b6cd;
     width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 20px;
     margin-bottom: 30px;
 }
 
@@ -40,11 +44,13 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
     height: 50px;
-    padding: 0 30px;
+    padding: 0 15px;
     display: flex;
     align-items: center;
     color: #6e35ab;
@@ -58,7 +64,7 @@ nav a:hover {
     float: left;
     text-align: left;
     color: #3d205c;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
     margin-right: auto;
     flex-wrap: nowrap;
@@ -119,7 +125,7 @@ img {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .row2 {
@@ -128,7 +134,7 @@ img {
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .col1 {
@@ -173,8 +179,11 @@ img {
 .row3 {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1380px;
     flex-wrap: wrap;
     margin: 35px;
+    padding: 15px;
     background-color: #fcf5f4;
     border-radius: 10px;
 }
@@ -290,6 +299,8 @@ img {
     width: 30%;
     padding: 20px;
     border: 1px solid #000000;
+    background-color: #fcf5f4;
+    border-radius: 10px;
 }
 
 .colu iframe {
@@ -343,19 +354,28 @@ img {
 
 .email,
 .linkedin {
+    align-items: center;
     text-align: center;
     margin: auto;
 }
 
 .email-icon {
     font-size: 70px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.linkedin img {
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
 .footer_nav {
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
     gap: 20px;
 }

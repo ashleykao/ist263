@@ -15,10 +15,10 @@
 
             <ul class="sidebar">
                 <li onclick="hideSidebar()"> <svg xmlns="http://www.w3.org/2000/svg" height="30x"
-                            viewBox="0 -960 960 960" width="30px" fill="#3d205c">
-                            <path
-                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                        </svg> </a> </li>
+                        viewBox="0 -960 960 960" width="30px" fill="#3d205c">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg> </a> </li>
                 <li> <a href="index.html">Home</a> </li>
                 <li> <a href="exp.html">Experience</a> </li>
                 <li> <a href="proj.html">Project Gallery</a> </li>
@@ -29,57 +29,58 @@
                     <li class="hideOnMobile"> <a href="index.html">Home</a> </li>
                     <li class="hideOnMobile"> <a href="exp.html">Experience</a> </li>
                     <li class="hideOnMobile"> <a href="proj.html">Project Gallery</a> </li>
-                    <li class="menubutton" onclick="showSidebar()"> <svg
-                                xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
-                                fill="#3d205c">
-                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                            </svg> </a> </li>
+                    <li class="menubutton" onclick="showSidebar()"> <svg xmlns="http://www.w3.org/2000/svg"
+                            height="26px" viewBox="0 -960 960 960" width="26px" fill="#3d205c">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg> </a> </li>
                 </ul>
             </div>
         </nav>
         <a href="#main" class="skip">Skip to main content</a>
     </header>
 
-    <div class="cont">
-        <div class="title">
-            <h1>Experience</h1>
-            <br>
+    <main>
+        <div class="cont">
+            <div class="title">
+                <h1>Experience</h1>
+                <br>
 
-            <p>
-                Since the start of my college career, I have had an interest in the <b>intersection</b> between
-                Linguistics and Technology. With my combined majors, I offer a unique perspective on the affordances
-                one has when interacting with an information system, especially concerning the language that is used
-                within these systems. Through my experiences as a student, a mentor, and a research assistant, I
-                have been able to gain an understanding of how important <b>inclusivity and accessibility</b> in the
-                realm of human computer interaction is.
-            </p>
-            <br> <br> <br>
+                <p>
+                    Since the start of my college career, I have had an interest in the <b>intersection</b> between
+                    Linguistics and Technology. With my combined majors, I offer a unique perspective on the affordances
+                    one has when interacting with an information system, especially concerning the language that is used
+                    within these systems. Through my experiences as a student, a mentor, and a research assistant, I
+                    have been able to gain an understanding of how important <b>inclusivity and accessibility</b> in the
+                    realm of human computer interaction is.
+                </p>
+                <br> <br> <br>
+            </div>
+
+            <div class="snap">
+                <h2>Snapshot</h2>
+                <p>
+                    These are the main positions I have held in my career thus far.
+                <ul>
+                    <li>WellsLink Peer Mentor</li>
+                    <li>SOURCE Research Assistant</li>
+                    <li>Linguistic Studies Alumni Outreach Assistant</li>
+                </ul>
+                <br> <br>
+                For more information, please view my resume and past presentations below.
+                </p>
+            </div>
         </div>
 
-        <div class="snap">
-            <h2>Snapshot</h2>
-            <p>
-                These are the main positions I have held in my career thus far.
-            <ul>
-                <li>WellsLink Peer Mentor</li>
-                <li>SOURCE Research Assistant</li>
-                <li>Linguistic Studies Alumni Outreach Assistant</li>
-            </ul>
-            <br> <br>
-            For more information, please view my resume and past presentations below.
-            </p>
+
+        <div class="resume">
+            <object data="media/kao_resume.pdf" type="application/pdf" width="75%" height="700px">
+                <p>
+                    Unable to display PDF file? Click here: <a href="media/Ashley Kao Resume for HTML.pdf">Resume</a>
+                </p>
+            </object>
         </div>
-    </div>
-
-
-    <div class="resume">
-        <object data="media/kao_resume.pdf" type="application/pdf" width="75%" height="700px">
-            <p>
-                Unable to display PDF file? Click here: <a href="media/Ashley Kao Resume for HTML.pdf">Resume</a>
-            </p>
-        </object>
-    </div>
-
+    </main>
+    
     <br><br>
     <hr>
 
@@ -145,6 +146,7 @@
         </div>
     </div>
 
+
     <footer>
         <nav class="footer_nav">
             <a href="index.html">Home</a>
@@ -157,11 +159,12 @@
     <script>
         function showSidebar() {
             document.querySelector('.sidebar').style.display = 'flex';
-            }
-    
+        }
+
         function hideSidebar() {
             document.querySelector('.sidebar').style.display = 'none';
-            }
+        }
     </script>
 </body>
+
 </html>

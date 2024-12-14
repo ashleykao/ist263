@@ -12,22 +12,39 @@ h2 {
 
 nav {
     background-color: #d6b6cd;
-    padding: 10px;
+    padding: 10px 20px;
     margin-bottom: 30px;
     color: #6e35ab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
-    color: #6e35ab;
-}
-
-nav a:hover {
-    background-color: #f2c9e7;
+.logo {
+    float: left;
+    text-align: center;
+    color: #873647;
 }
 
 .links {
+    color: #6e35ab;
     float: right;
+    text-align: center;
+    padding: 14px 16px;
+    gap: 20px;
 }
+
+.links a:hover {
+    background-color: #f2c9e7;
+    border-radius: 5px
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
 
 img {
     max-width: 100%;
@@ -92,8 +109,7 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin: 35px;
     background-color: #fcf5f4;
     border-radius: 10px;
 }
@@ -143,17 +159,32 @@ img {
 
 .presentations {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin: 50px;
     background-color: #fcf5f4;
     border-radius: 10px;
     gap: 20px;
     padding: 20px;
 }
 
-.presentations .col {
+.pintro {
+    margin-left: 50px;
+}
+
+.presrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     flex: 1;
     min-width: 270px;
     max-width: 30%;
@@ -168,10 +199,96 @@ img {
     object-fit: cover;
     border-radius: 10px;
     display: block;
-    margin-bottom: 15px
+    margin-bottom: 5px
 }
 
-footer {
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.bigrow {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 30px;
+}
+
+.colu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.colu iframe {
+    padding: 30px;
+}
+
+.proj_name {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.colu object,
+.colu iframe {
+    margin-top: 10px;
+}
+
+#names {
+    color: #6e35ab;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #fcf5f4;
+    width: 900px;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.footer .contact {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px;
+}
+
+.email,
+.linkedin {
+    text-align: center;
+    margin: auto;
+}
+
+.email-icon {
+    font-size: 70px;
+}
+
+.footer_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-top: 20px;
+    gap: 20px;
 }

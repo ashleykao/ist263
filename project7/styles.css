@@ -10,6 +10,21 @@ h2 {
     color: #873647;
 }
 
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
 nav {
     background-color: #d6b6cd;
     padding: 10px 20px;
@@ -38,13 +53,6 @@ nav {
     background-color: #f2c9e7;
     border-radius: 5px
 }
-
-.hamburger {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
 
 img {
     max-width: 100%;
